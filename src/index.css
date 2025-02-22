@@ -5,6 +5,19 @@
 
 /* ... */
 
+* {
+  scroll-behavior: smooth;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  overscroll-behavior-x: none;
+}
+
 .link-in-bio-ui {
   position: relative;
   width: 100%;
@@ -14,7 +27,7 @@
   align-items: center;
   justify-content: start;
   padding: 1rem;
-  background-image: url(assets/main-background.jpg);
+  background-image: url(assets/main-background2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

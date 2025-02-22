@@ -5,8 +5,13 @@ import {
   FaLinkedin,
   FaGithub,
   FaTiktok,
+  FaArrowRight,
 } from "react-icons/fa";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import {
+  FaArrowRightLong,
+  FaArrowUpRightDots,
+  FaArrowUpRightFromSquare,
+} from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -16,13 +21,15 @@ const LinkInBioUI = () => {
   const tabsRef = useRef(null);
 
   const tabs = [
+    "About",
     "Fun Hobbies",
     "Career Path",
-    "Photography",
+    "Personal Blog",
     // "Adventures and Tips",
   ];
 
   const content = {
+    About: [{ title: "Vision", link: "/vision" }],
     "Fun Hobbies": [
       { title: "Photography Adventures and Tips", link: "/photography-tips" },
       { title: "Travel Memories and Stories", link: "/travel-stories" },
@@ -36,11 +43,7 @@ const LinkInBioUI = () => {
       { title: "My Journey at Apple", link: "/career-apple" },
       { title: "Tech Skills You Should Learn", link: "/tech-skills" },
     ],
-    Photography: [
-      { title: "My Best Photography Shots", link: "/best-shots" },
-      { title: "Camera Gear I Use", link: "/camera-gear" },
-      { title: "Editing Techniques", link: "/photo-editing" },
-    ],
+    "Personal Blog": [],
     // "Adventures and Tips": [
     //   { title: "Solo Travel Tips", link: "/solo-travel" },
     //   {
@@ -131,14 +134,15 @@ const LinkInBioUI = () => {
 
       {/* Content Section */}
       <div className="mt-[8px] w-full max-w-md">
-        {content[activeTab].map((item, index) => (
+        {content[activeTab]?.map((item, index) => (
           <div key={index} className="mb-[8px]">
             {item.link.startsWith("http") ? (
               <a
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-[13px] justify-between bg-[#30363D] border border-[#30363D] rounded-md px-4 py-3 hover:bg-[#3A3F4A]"
+                className="flex items-center text-[13px] justify-between bg-[#30363D] border border-opacity-10 rounded-md px-4 py-3 hover:bg-[#3A3F4A]"
+                style={{ border: "1px solid rgba(255, 255, 255, 0.1)" }}
               >
                 {item.title}
                 <FaArrowUpRightFromSquare />
@@ -146,10 +150,11 @@ const LinkInBioUI = () => {
             ) : (
               <Link
                 to={item.link}
-                className="flex items-center text-[13px] justify-between bg-[#30363D] border border-[#30363D] rounded-md px-4 py-3 hover:bg-[#3A3F4A]"
+                className="flex items-center text-[13px] justify-between bg-[#30363D] border border-opacity-10 rounded-md px-4 py-3 hover:bg-[#3A3F4A]"
+                style={{ border: "1px solid rgba(255, 255, 255, 0.1)" }}
               >
                 {item.title}
-                <FaArrowUpRightFromSquare />
+                <FaArrowRightLong />
               </Link>
             )}
           </div>
@@ -158,9 +163,9 @@ const LinkInBioUI = () => {
 
       {/* Social Media Icons */}
       <div className="fixed bottom-3 left-0 right-0 flex justify-center space-x-4 p-4 ">
-        <a href="#" className="text-[#737C86] hover:text-[#C9D1D9]">
+        {/* <a href="#" className="text-[#737C86] hover:text-[#C9D1D9]">
           <FaTiktok size={24} />
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/asep-angga/"
           className="text-[#737C86]  hover:text-[#C9D1D9]"
