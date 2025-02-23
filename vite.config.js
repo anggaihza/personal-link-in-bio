@@ -5,7 +5,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/PERSONAL-LINK-IN-BIO",
+  base: "/personal-link-in-bio/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
