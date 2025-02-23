@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import profileImage from "../assets/profile.jpg";
 
 const LinkInBioUI = () => {
   const [activeTab, setActiveTab] = useState("Fun Hobbies");
@@ -86,7 +87,7 @@ const LinkInBioUI = () => {
       <div className="flex flex-col items-center space-y-4 mb-6 mt-6">
         <div className="w-[100px] h-[100px] rounded-full bg-[#30363D] flex items-center justify-center">
           <img
-            src="/src/assets/profile.jpg"
+            src={profileImage}
             alt="Profile"
             className="w-full h-full object-cover object-center rounded-full  transition-transform duration-300"
             style={{ objectPosition: "50% 10%" }}
