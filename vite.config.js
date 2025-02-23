@@ -5,7 +5,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/angga-arsy",
+  base: "/PERSONAL-LINK-IN-BIO",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
