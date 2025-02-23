@@ -6,7 +6,7 @@ function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/personal-link-in-bio" element={<LinkInBioUI />} />
+        <Route path="/" element={<LinkInBioUI />} />
       </Routes>
     </Suspense>
   );
