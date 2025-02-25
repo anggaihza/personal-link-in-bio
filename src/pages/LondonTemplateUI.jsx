@@ -1,6 +1,6 @@
 import React from "react";
 import dummy1 from "../assets/dummy1.png";
-import londonBackground from "../assets/london-background.jpg";
+import londonBackground from "../assets/london-background2.jpg";
 
 // Import icons from react-icons
 import { FaTools, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -26,7 +26,7 @@ const LondonTemplateUI = () => {
 
   function Button({ text }) {
     return (
-      <button className="transition-all duration-300 hover:bg-gray-100 border bg-white/10 backdrop-blur-xl border-gray-300 rounded-full h-12 w-full text-gray-800 font-medium flex items-center justify-center space-x-2">
+      <button className="transition-all duration-300 hover:bg-gray-100 border bg-white/10 backdrop-blur-xl border-white/30 rounded-full h-12 w-full text-gray-800 font-medium flex items-center justify-center space-x-2">
         {iconMapping[text]}
         <span>{text}</span>
       </button>
@@ -42,7 +42,7 @@ const LondonTemplateUI = () => {
       <div className="absolute inset-0 bg-black/0"></div>
 
       {/* Glassmorphism card */}
-      <div className="relative mx-4 z-10 p-10 bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl shadow-lg max-w-md w-full text-center">
+      <div className="relative mx-4 z-10 p-10 bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl shadow-lg max-w-md w-full text-center">
         <img
           src={dummy1}
           alt="Jessica Randall"
