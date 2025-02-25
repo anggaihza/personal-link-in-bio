@@ -26,7 +26,7 @@ const LondonTemplateUI = () => {
 
   function Button({ text }) {
     return (
-      <button className="transition-all duration-300 hover:bg-gray-100 border bg-white/10 backdrop-blur-xl border-white/30 rounded-full h-12 w-full text-gray-800 font-medium flex items-center justify-center space-x-2">
+      <button className="transition-all duration-300 hover:bg-gray-100 border bg-white/10 backdrop-blur-xl border-white/30 rounded-full h-12 w-full text-gray-95\00 font-medium flex items-center justify-center space-x-2">
         {iconMapping[text]}
         <span>{text}</span>
       </button>
