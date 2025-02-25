@@ -41,6 +41,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.5.3",
     "shadcn": "^2.4.0-canary.9",
+    "shadcn-ui": "^0.9.4",
     "tailwindcss": "^4.0.8",
     "vite": "^6.1.0"
   }

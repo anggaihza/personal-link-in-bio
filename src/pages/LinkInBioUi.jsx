@@ -7,12 +7,7 @@ import {
   FaTiktok,
   FaArrowRight,
 } from "react-icons/fa";
-import {
-  FaArrowRightLong,
-  FaArrowUpRightDots,
-  FaArrowUpRightFromSquare,
-} from "react-icons/fa6";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FaArrowRightLong, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import profileImage from "../assets/profile.jpg";
 
