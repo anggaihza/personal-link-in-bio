@@ -53,7 +53,7 @@ const LondonTemplateUI = () => {
           <h1 className="text-2xl font-bold text-white drop-shadow-sm">
             Jessica Randall
           </h1>
-          <p className="mt-1 text-sm text-gray-300 uppercase tracking-wider">
+          <p className="mt-1 text-sm text-[#c5f82b] uppercase tracking-wider">
             Jakarta, Indonesia
           </p>
         </div>
