@@ -4,6 +4,7 @@ import LinkInBioUI from "./pages/LinkInBioUi";
 import BrixTempleteUi from "./pages/BrixTemplateUi";
 import LondonTemplateUI from "./pages/LondonTemplateUI";
 import OliviaTemplateUi from "./pages/OliviaTemplateUi";
+import RasylTemplateUi from "./pages/RasylTemplateUi";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/brix" element={<BrixTempleteUi />} />
         <Route path="/london" element={<LondonTemplateUI />} />
         <Route path="/olivia" element={<OliviaTemplateUi />} />
+        <Route path="/rasyl" element={<RasylTemplateUi />} />
       </Routes>
     </Suspense>
   );
