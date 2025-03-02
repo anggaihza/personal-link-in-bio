@@ -5,6 +5,9 @@ import BrixTempleteUi from "./pages/BrixTemplateUi";
 import LondonTemplateUI from "./pages/LondonTemplateUI";
 import OliviaTemplateUi from "./pages/OliviaTemplateUi";
 import RasylTemplateUi from "./pages/RasylTemplateUi";
+import LilyTemplateUi from "./pages/LilyTemplateUi";
+import AmarilysTemplateUi from "./pages/AmarilysTemplateUi";
+import NeuTemplateUi from "./pages/NeuTemplateUi";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Route path="/london" element={<LondonTemplateUI />} />
         <Route path="/olivia" element={<OliviaTemplateUi />} />
         <Route path="/rasyl" element={<RasylTemplateUi />} />
+        <Route path="/lily" element={<LilyTemplateUi />} />
+        <Route path="/ryls" element={<AmarilysTemplateUi />} />
+        <Route path="/neu" element={<NeuTemplateUi />} />
       </Routes>
     </Suspense>
   );
