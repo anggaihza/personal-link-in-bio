@@ -8,6 +8,7 @@ import RasylTemplateUi from "./pages/RasylTemplateUi";
 import LilyTemplateUi from "./pages/LilyTemplateUi";
 import AmarilysTemplateUi from "./pages/AmarilysTemplateUi";
 import NeuTemplateUi from "./pages/NeuTemplateUi";
+import ClaireTemplateUi from "./pages/ClaireTemplateUi";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/lily" element={<LilyTemplateUi />} />
         <Route path="/ryls" element={<AmarilysTemplateUi />} />
         <Route path="/neu" element={<NeuTemplateUi />} />
+        <Route path="/claire" element={<ClaireTemplateUi />} />
       </Routes>
     </Suspense>
   );
