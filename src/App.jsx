@@ -9,6 +9,7 @@ import LilyTemplateUi from "./pages/LilyTemplateUi";
 import AmarilysTemplateUi from "./pages/AmarilysTemplateUi";
 import NeuTemplateUi from "./pages/NeuTemplateUi";
 import ClaireTemplateUi from "./pages/ClaireTemplateUi";
+import ArsyVision from "./components/personal/ArsyVision";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/ryls" element={<AmarilysTemplateUi />} />
         <Route path="/neu" element={<NeuTemplateUi />} />
         <Route path="/claire" element={<ClaireTemplateUi />} />
+
+        <Route path="/vision" element={<ArsyVision />} />
       </Routes>
     </Suspense>
   );

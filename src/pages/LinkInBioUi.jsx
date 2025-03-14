@@ -25,19 +25,19 @@ const LinkInBioUI = () => {
   ];
 
   const content = {
-    About: [{ title: "Vision", link: "/vision" }],
+    About: [{ title: "Arsy", link: "/vision" }],
     "Fun Hobbies": [
-      { title: "Photography Adventures and Tips", link: "/photography-tips" },
-      { title: "Travel Memories and Stories", link: "/travel-stories" },
-      { title: "My Board Games Collection", link: "/board-games" },
-      { title: "Books I Recommend", link: "/books" },
-      { title: "Art and Sketches Portfolio", link: "/art-portfolio" },
-      { title: "My Board Book Collection", link: "/board-books" },
+      { title: "Photography Adventures and Tips", link: "#" },
+      { title: "Travel Memories and Stories", link: "#" },
+      { title: "My Board Games Collection", link: "#" },
+      { title: "Books I Recommend", link: "#" },
+      { title: "Art and Sketches Portfolio", link: "#" },
+      { title: "My Board Book Collection", link: "#" },
     ],
     "Career Path": [
-      { title: "How I Became a UI Developer", link: "/career-ui-developer" },
-      { title: "My Journey at Apple", link: "/career-apple" },
-      { title: "Tech Skills You Should Learn", link: "/tech-skills" },
+      { title: "How I Became a UI Developer", link: "#" },
+      { title: "My Journey at Apple", link: "#" },
+      { title: "Tech Skills You Should Learn", link: "#" },
     ],
     "Personal Blog": [],
     // "Adventures and Tips": [
@@ -51,14 +51,14 @@ const LinkInBioUI = () => {
   };
 
   // Iterate through each category
-  for (const category in content) {
-    if (content.hasOwnProperty(category)) {
-      // Iterate through each item in the category
-      content[category].forEach((item) => {
-        item.link = "#"; // Change the link to "#"
-      });
-    }
-  }
+  // for (const category in content) {
+  //   if (content.hasOwnProperty(category)) {
+  //     // Iterate through each item in the category
+  //     content[category].forEach((item) => {
+  //       item.link = "#"; // Change the link to "#"
+  //     });
+  //   }
+  // }
 
   useEffect(() => {
     const checkOverflow = () => {
