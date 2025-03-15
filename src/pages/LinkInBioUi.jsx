@@ -26,7 +26,10 @@ const LinkInBioUI = () => {
   ];
 
   const content = {
-    About: [{ title: "Arsy", link: "/vision" }],
+    About: [
+      { title: "Arsy", link: "/vision" },
+      { title: "Rumus cinta Al-Khawarizmi", link: "/alkhawarizmi" },
+    ],
     "Fun Hobbies": [
       { title: "Photography Adventures and Tips (soon)", link: "#" },
       { title: "Basketball and Sports (soon)", link: "#" },

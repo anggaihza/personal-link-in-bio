@@ -10,6 +10,7 @@ import AmarilysTemplateUi from "./pages/AmarilysTemplateUi";
 import NeuTemplateUi from "./pages/NeuTemplateUi";
 import ClaireTemplateUi from "./pages/ClaireTemplateUi";
 import ArsyVision from "./components/personal/ArsyVision";
+import AlKhawarizmi from "./components/personal/AlKhawarizmi";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/claire" element={<ClaireTemplateUi />} />
 
         <Route path="/vision" element={<ArsyVision />} />
+        <Route path="/alkhawarizmi" element={<AlKhawarizmi />} />
       </Routes>
     </Suspense>
   );
