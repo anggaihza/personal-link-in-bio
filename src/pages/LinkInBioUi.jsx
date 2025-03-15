@@ -6,13 +6,14 @@ import {
   FaGithub,
   FaTiktok,
   FaArrowRight,
+  FaYoutube,
 } from "react-icons/fa";
 import { FaArrowRightLong, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import profileImage from "../assets/profile.jpg";
 
 const LinkInBioUI = () => {
-  const [activeTab, setActiveTab] = useState("Fun Hobbies");
+  const [activeTab, setActiveTab] = useState("About");
   const [isOverflowing, setIsOverflowing] = useState(false);
   const tabsRef = useRef(null);
 
@@ -27,17 +28,15 @@ const LinkInBioUI = () => {
   const content = {
     About: [{ title: "Arsy", link: "/vision" }],
     "Fun Hobbies": [
-      { title: "Photography Adventures and Tips", link: "#" },
-      { title: "Travel Memories and Stories", link: "#" },
-      { title: "My Board Games Collection", link: "#" },
-      { title: "Books I Recommend", link: "#" },
-      { title: "Art and Sketches Portfolio", link: "#" },
-      { title: "My Board Book Collection", link: "#" },
+      { title: "Photography Adventures and Tips (soon)", link: "#" },
+      { title: "Basketball and Sports (soon)", link: "#" },
+      { title: "Travel Memories and Stories (soon)", link: "#" },
+      { title: "Books I Recommend (soon)", link: "#" },
+      { title: "Art and Sketches Portfolio (soon)", link: "#" },
     ],
     "Career Path": [
-      { title: "How I Became a UI Developer", link: "#" },
-      { title: "My Journey at Apple", link: "#" },
-      { title: "Tech Skills You Should Learn", link: "#" },
+      { title: "How I Became a Software Engineer (soon)", link: "#" },
+      { title: "Tech Skills You Should Learn (soon)", link: "#" },
     ],
     "Personal Blog": [],
     // "Adventures and Tips": [
@@ -177,6 +176,14 @@ const LinkInBioUI = () => {
           className="text-[#737C86] hover:text-[#C9D1D9]"
         >
           <FaGithub size={24} />
+        </a>
+        <a
+          href="https://www.youtube.com/@anggaarrsy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#737C86] hover:text-[#C9D1D9]"
+        >
+          <FaYoutube size={24} />
         </a>
       </div>
     </div>
