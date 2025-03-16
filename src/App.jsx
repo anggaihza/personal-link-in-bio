@@ -14,7 +14,7 @@ import AlKhawarizmi from "./components/personal/AlKhawarizmi";
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading....</div>}>
       <Routes>
         <Route path="/" element={<LinkInBioUI />} />
         <Route path="/brix" element={<BrixTempleteUi />} />
