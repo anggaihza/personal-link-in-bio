@@ -11,6 +11,7 @@ import {
 import { FaArrowRightLong, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import profileImage from "../assets/profile.jpg";
+import toast, { Toaster } from "react-hot-toast";
 
 const LinkInBioUI = () => {
   const [activeTab, setActiveTab] = useState("About");
@@ -78,8 +79,35 @@ const LinkInBioUI = () => {
     };
   }, []);
 
+  const showCustomToast = (title) => {
+    toast(
+      <div className="flex items-center space-x-2">
+        <span className="text-yellow-300">⚠️</span>
+        <span>Konten nya masih di tulis, sabar yaa!!</span>
+      </div>,
+      {
+        style: {
+          background: "#000000",
+          color: "#E0E0E0",
+          border: "1px solid #30363D",
+          borderRadius: "8px",
+          padding: "12px",
+        },
+        icon: null,
+      }
+    );
+  };
+
+  const handleClick = (title, link, e) => {
+    if (link === "#") {
+      e.preventDefault();
+      showCustomToast(title);
+    }
+  };
+
   return (
     <div className="link-in-bio-ui flex flex-col items-center justify-start min-h-screen  text-[#C9D1D9] font-satoshi p-4">
+      <Toaster position="top-center" reverseOrder={false} />
       {/* Profile Section */}
       <div className="flex flex-col items-center space-y-4 mb-6 mt-6">
         <div className="w-[100px] h-[100px] rounded-full bg-[#30363D] flex items-center justify-center">
@@ -148,7 +176,8 @@ const LinkInBioUI = () => {
             ) : (
               <Link
                 to={item.link}
-                className="flex items-center text-[13px] justify-between bg-[#30363D] border border-opacity-10 rounded-md px-4 py-3 hover:bg-[#3A3F4A]"
+                onClick={(e) => handleClick(item.title, item.link, e)}
+                className="flex w-full items-center justify-between bg-[#30363D] border border-opacity-10 rounded-md px-4 py-3 hover:bg-[#3A3F4A]"
                 style={{ border: "1px solid rgba(255, 255, 255, 0.1)" }}
               >
                 {item.title}

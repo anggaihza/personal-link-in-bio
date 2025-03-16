@@ -17,17 +17,17 @@ const ArsyVision = () => {
           >
             Setelah lulus Sarjana (S1) di Bandung pada tahun 2021, Arsy
             melanjutkan pendidikan di bidang Software Engineering selama kurang
-            lebih satu tahun di Jakarta, di salah satu kampus Engineering yang
-            terbaik di Indonesia.
+            lebih satu tahun di Jakarta, di salah satu kampus Engineering ter
+            favorit di Indonesia.
           </p>
           <p
             className="text-gray-600 mt-2 text-justify"
             style={{ fontFamily: "PT Serif, serif" }}
           >
             Saat ini Arsy adalah seorang profesional Software Engineer muslim
-            yang saat ini bekerja di salah satu perusahaan Software House di
-            Dago Bandung dan dipercaya bekerja sama dengan berbagai tim dari
-            berbagai negara dalam proyek berskala global.
+            yang bekerja di salah satu perusahaan Software House di Dago Bandung
+            dan dipercaya bekerja sama dengan berbagai tim dari berbagai negara
+            dalam proyek berskala global.
           </p>
           <p
             className="text-gray-600 mt-2 text-justify"
@@ -43,10 +43,10 @@ const ArsyVision = () => {
             className="text-gray-600 mt-2 text-justify"
             style={{ fontFamily: "PT Serif, serif" }}
           >
-            Selain mengembangkan teknologi, Arsy suka berbagi ilmu lewat tulisan
-            dan konten. Arsy percaya bahwa teknologi bukan cuma soal membangun
-            sistem, tapi juga bagaimana bisa belajar dan berbagi dengan orang
-            lain.
+            Selain mengembangkan teknologi, Arsy juga mengajar dan suka berbagi
+            ilmu lewat tulisan dan konten. Arsy percaya bahwa teknologi bukan
+            cuma soal membangun sistem, tapi juga bagaimana bisa belajar dan
+            berbagi dengan orang lain.
           </p>
           <p
             className="text-gray-600 mt-2 text-justify"
@@ -69,7 +69,7 @@ const ArsyVision = () => {
             className="text-gray-600 mt-2 text-justify"
             style={{ fontFamily: "PT Serif, serif" }}
           >
-            Note: Arsy bukan wibu, berusaha hidup dehat dan tidak merokok.
+            Note: Arsy bukan wibu, berusaha hidup sehat dan tidak merokok.
           </p>
         </div>
         <div className="space-y-6">
