@@ -107,6 +107,7 @@ const LinkInBioUI = () => {
 
   return (
     <div className="link-in-bio-ui flex flex-col items-center justify-start min-h-screen  text-[#C9D1D9] font-satoshi p-4">
+      {/* Toaster */}
       <Toaster position="top-center" reverseOrder={false} />
       {/* Profile Section */}
       <div className="flex flex-col items-center space-y-4 mb-6 mt-6">
